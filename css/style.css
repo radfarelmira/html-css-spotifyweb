@@ -8,17 +8,18 @@
 /* COMMON */
 body{
     font-family: 'Montserrat', sans-serif;
-
-    /* test */
-    font-size: 30px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .app-wrapper{
     width: 100%;
     height: 100vh;
+}
 
-    /* test */
-    background-color: beige;
+ul{
+    text-decoration: none;
 }
 
 /* MAIN */
@@ -26,17 +27,85 @@ main{
     width: 100%;
     height: calc(100% - 120px);
     overflow: hidden;
-
-    /* test */
-    background-color: lightpink;
 }
 
+/* Main nav */
 .main-nav{
     width: 300px;
     height: 100%;
     background-color: black;
     float: left;
 
+}
+
+.nav-logo{
+    padding: 15px;
+
+    /* test */
+    background-color: lightgreen;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-actions{
+    padding: 15px;
+
+    /* test */
+    background-color: lightpink;
+}
+
+.nav-actions li{
+    margin-bottom: 15px;
+}
+
+.nav-actions i{
+    font-size: 30px;
+    vertical-align: middle;
+}
+.nav-actions a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    vertical-align: middle;
+}
+
+.nav-actions li:hover{
+    color: white;
+}
+
+.nav-playlist{
+    padding: 0 15px;
+
+    /* test */
+    background-color: lightskyblue;
+}
+
+.nav-playlist h3{
+    color: white;
+}
+
+.nav-playlist i{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.nav-playlist> *{
+    margin-bottom: 15px;
+}
+
+.nav-playlist li{
+    margin-bottom: 15px;
+}
+/* Main content */
+.main-content{
+    width: calc(100% - 300px);
+    height: 100%;
+    float: left;
+    padding-top: 100px;
+    overflow-y: auto;
+    background-color: rgb(14, 17, 26);
 }
 
 .uppgrade-bar{
@@ -52,8 +121,6 @@ main{
 footer{
     width: 100%;
     height: 120px;
-    /* overflow: hidden; */
-
-    /* test */
-    background-color: burlywood;
+    overflow: hidden;
+    background-color:rgb(31, 29, 29);
 }
