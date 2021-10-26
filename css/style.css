@@ -86,6 +86,11 @@ main{
     padding-top: 15px;
 }
 
+.nav-playlist .create-playlist:hover,
+.nav-playlist li:hover{
+    color: white;
+}
+
 .nav-playlist i{
     font-size: 40px;
     vertical-align: middle;
@@ -94,9 +99,16 @@ main{
 .nav-playlist li{
     margin-bottom: 15px;
 }
+
+
+
 /* nav users */
 .nav-users{
     padding: 15px 0;
+}
+
+.install-app:hover{
+    color: white;
 }
 
 .install-app::after{
@@ -124,13 +136,31 @@ main{
     background-color: rgb(14, 17, 26);
 }
 
+/* uppgrade bar */
 .uppgrade-bar{
     width: calc(100% - 250px);
-    height: 80px;
+    height: 100px;
     background-color: rgb(0,0,0,0.4);
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.uppgrade-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 80px;
+    border: 1px solid white;
+    border-radius: 40px;
+    transition: transform;
+}
+
+.uppgrade-btn:active{
+    transform: scale(1.09);  
 }
 
 /* FOOTER */
