@@ -159,9 +159,42 @@ main{
     transition: transform;
 }
 
-.uppgrade-btn:active{
+.uppgrade-btn:hover{
     transform: scale(1.09);  
 }
+
+/*Main content menu  */
+.main-content .menu{
+    max-width: 1100px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu .in-evidenza::after{
+    content: "";
+    display: block;
+    width: 35%;
+    height: 3px;
+    background-color: yellowgreen;
+    margin: auto;
+    margin-top: 5px;
+}
+
 
 /* FOOTER */
 footer{
