@@ -19,7 +19,7 @@ body{
 }
 
 ul{
-    text-decoration: none;
+    list-style-type: none;
 }
 
 /* MAIN */
@@ -35,11 +35,12 @@ main{
     height: 100%;
     background-color: black;
     float: left;
+    padding-left: 20px;
 
 }
 
 .nav-logo{
-    padding: 15px;
+    
 
     /* test */
     background-color: lightgreen;
@@ -91,12 +92,20 @@ main{
     vertical-align: middle;
 }
 
-.nav-playlist> *{
-    margin-bottom: 15px;
+.nav-playlist .create-playlist{
+    margin: 15px 0;
 }
 
 .nav-playlist li{
     margin-bottom: 15px;
+}
+
+.install-app::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: gray;
 }
 /* Main content */
 .main-content{
