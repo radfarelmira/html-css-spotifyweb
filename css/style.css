@@ -185,7 +185,7 @@ main{
 .uppgrade-btn{
     display: inline-block;
     text-decoration: none;
-    padding: 20px 80px;
+    padding: 15px 70px;
     border: 1px solid white;
     border-radius: 40px;
     transition: transform;
@@ -241,6 +241,9 @@ main{
     margin-top: 50px;
 }
 
+.row-albums p{
+    margin-top: 20px;
+}
 
 .albums{
     display: flex;
@@ -252,13 +255,20 @@ main{
 .singel-album{
     width: calc(100% / 6 - 20px);
     margin: 10px;
-
-    /* test */
-    border: 1px solid coral;
 }
 
 .singel-album-img{
     position: relative;
+    
+}
+
+.singel-album-img.circel{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circel img{
+    display: block;
 }
 
 .overlay{
@@ -295,6 +305,9 @@ main{
     margin: 20px 0;
 }
 
+.singel-album-img .circel{
+
+}
 
 /* FOOTER */
 footer{
