@@ -319,36 +319,13 @@ footer{
     align-items: center;
 }
 
-.footer-content-left,
-.footer-content-right{
-    margin:0 20px;
-}
-
-.footer-content-center{
-
-    /* test */
-    height: 70%;
-    background-color: darkred;
-} 
-
+/* footer content left */
 .footer-content-left{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-
-.footer-content-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.footer-content-center{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-left: 20px;
 }
 
 .footer-content-left> *{
@@ -356,17 +333,84 @@ footer{
 }
 
 .footer-img-text{
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
-.footer-content-right> *{
-    margin-left: 15px;
+.brano-nome:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+.footer-content-left i:hover{
+    color: white;
 }
 
 .footer-img{
-    width: 60px;
-    height: 60px ;
-    background-image: url(../img/sinister.jpeg);
-    background-size: cover;
+    width:10%;
 }
 
+
+/* Footer content center */
+.footer-content-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/* Footer content right */
+.footer-content-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer-content-right> *{
+    margin-left: 20px;
+}
+
+.footer-right-slider{
+    width: 100%;
+    position: relative;
+}
+
+.progress-area{
+    height: 6px;
+    width: 200px;
+    background: rgb(34, 37, 37);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.progress-area .progress-bar{
+    height: inherit;
+    width: 50%;
+    border-radius: inherit;
+    background-color: gray;
+    position: relative;
+}
+
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: inherit;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.progress-area:hover .progress-bar::before{
+    display: inline-block;
+    background-color: white;
+
+}
+
+.progress-bar:hover{
+    background-color: yellowgreen;
+}
