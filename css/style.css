@@ -48,26 +48,45 @@ main{
     height: 100%;
     background-color: black;
     float: left;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     display: flex;
     flex-direction: column;
 }
+
 /* nav logo */
 .logo{
     height: 60px;
+}
+
+.nav-logo{
+    padding: 20px 20px 20px 0;
 }
 
 /* nav actions */
 .nav-actions{
     padding-top: 15px;
 }
-.nav-actions li{
-    padding: 15px 0;
+.nav-actions .home-action::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 50px;
+    background-color: yellowgreen;
+    vertical-align: middle;
+    margin-right: 20px;  
 }
 
+.nav-actions li{
+    padding: 15px 20px;
+}
+
+.nav-actions .home-action{
+    padding-left: 0;
+}
 .nav-actions i{
     font-size: 30px;
     vertical-align: middle;
+    margin-right: 5px;
 }
 
 .nav-actions a{
@@ -80,10 +99,12 @@ main{
 .nav-actions li:hover{
     color: white;
 }
+
 /* nav playlist */
 .nav-playlist{
     flex-grow: 1;
     overflow: hidden;
+    padding-left: 20px;
 }
 
 .nav-playlist ul{
@@ -102,19 +123,22 @@ main{
 .nav-playlist i{
     font-size: 40px;
     vertical-align: middle;
+    margin-right: 5px;
 }
 
 .nav-playlist li{
     margin-bottom: 15px;
 }
 
-
-
 /* nav users */
 .nav-users{
-    padding: 15px 0;
+    padding: 15px 0 15px 20px;
 }
 
+.install-app i,
+.user i{
+    margin-right: 5px;
+}
 .install-app:hover{
     color: white;
 }
@@ -132,7 +156,6 @@ main{
     font-size: 40px;
     vertical-align: middle;
 }
-
 
 /* Main content */
 .main-content{
@@ -215,7 +238,7 @@ main{
 
 /* main content row album */
 .row-albums{
-    margin: 50px 0
+    margin-top: 50px;
 }
 
 
@@ -258,12 +281,13 @@ main{
     display: none;
 }
 
-.singel-album-img:hover .overlay
-,.singel-album-img:hover .play-icon {
+.singel-album-img:hover .overlay,
+.singel-album-img:hover .play-icon {
     display: inline-block;
 }
 
 .singel-album-text{
+    width: 100%;
     text-align: center;
 }
 
