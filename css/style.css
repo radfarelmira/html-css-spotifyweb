@@ -282,7 +282,7 @@ main{
 }
 
 .play-icon{
-    font-size: 150px;
+    font-size: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -483,6 +483,10 @@ footer{
     .singel-album{
         width: calc(100% / 4 - 20px);
         margin: 10px;
+    }
+
+    .play-icon{
+        font-size: 50px;
     }
 
 
