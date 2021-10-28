@@ -48,7 +48,6 @@ main{
     height: 100%;
     background-color: black;
     float: left;
-    /* padding-left: 20px; */
     display: flex;
     flex-direction: column;
 }
@@ -56,6 +55,10 @@ main{
 /* nav logo */
 .logo{
     height: 60px;
+}
+
+.logo-small{
+    display: none;
 }
 
 .nav-logo{
@@ -468,9 +471,11 @@ footer{
     background-color: yellowgreen;
 }
 
+
 /* Descktop first */
 
-@media screen and (max-width: 1100px) {
+/* max 1100px */
+@media screen and (max-width: 1099px) {
     body{
         font-size: 16px;
     }
@@ -488,11 +493,14 @@ footer{
     .play-icon{
         font-size: 50px;
     }
-
-
 }
 
-@media screen and (max-width: 700px){
+/* max 700px */
+@media screen and (max-width: 699px){
+    body{
+        font-size: 14px;
+    }
+
     .singel-album{
         width: calc(100% / 2 - 20px);
         margin: 10px;
@@ -500,6 +508,125 @@ footer{
 
     .controls{
         width: 50%;
+    }   
+}
+
+/* max 600px */
+@media screen and (max-width: 599px) {
+
+    /* Main nav */
+    .main-nav{
+        width: 80px;
+        /* padding: 5px; */
     }
-    
+
+    /* nav logo */
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    .nav-logo{
+        padding: 10px;
+    }
+
+    /* nav actions */
+    .nav-actions{
+        padding-top: 0;
+    }
+    .nav-actions .home-action::before{
+        display: none;    
+    }
+
+    .nav-actions li{
+        padding: 0;
+    }
+
+    .nav-actions .icon-img{
+        width: 60px;
+        margin:10px 0 10px 10px;
+    }
+
+    .nav-actions a{
+        display: none;
+    }
+
+    /* nav playlist */
+    .nav-playlist{
+        flex-grow: 1;
+    }
+
+    .nav-playlist> *{
+        display: none;
+    }
+
+.nav-playlist .create-playlist:hover,
+.nav-playlist li:hover{
+    color: white;
+}
+
+.nav-playlist i{
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.nav-playlist li{
+    margin-bottom: 15px;
+}
+
+/* nav users */
+.nav-users{
+    padding: 0 20px;
+}
+
+.install-app,
+.user{
+    padding: 15px 0;
+}
+.install-app i,
+.user i{
+    padding-right: 5px;
+}
+
+.install-app:hover{
+    color: white;
+}
+
+.install-app{
+    border-bottom: 1px solid gray;
+}
+
+.user i{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+/* Main content */
+.main-content{
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+    padding: 100px 30px 0 30px;
+    overflow-y: auto;
+    background-color: rgb(14, 17, 26);
+    padding
+}
+
+/* uppgrade bar */
+.uppgrade-bar{
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: rgb(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
 }
