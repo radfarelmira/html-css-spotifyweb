@@ -378,7 +378,7 @@ footer{
 .controls ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -412,7 +412,7 @@ footer{
 
 .footer-content-center .progress-area{
     height: 6px;
-    width: 80%;
+    width: 100%;
     background: rgb(34, 37, 37);
     border-radius: 50px;
     cursor: pointer;
